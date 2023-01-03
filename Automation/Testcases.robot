@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Automation/Keywords.robot
+Resource    Automation/Keywords.robot
 Library     SeleniumLibrary
 
 *** Test Cases ***
