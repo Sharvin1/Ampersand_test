@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20230103 09:35:35.210" rpa="false" schemaversion="3">
+<suite id="s1" name="Testcases" source="C:\Users\sra32809\PycharmProjects\TestFrontend\Automation\Testcases.robot">
+<test id="s1-t1" name="Scenario 2" line="14">
+<kw name="Given I go to localhost:4200" library="Keywords">
+<tag>test_frontend</tag>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL_FRONTEND}</arg>
+<arg>${CHROME}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230103 09:35:35.778" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200'.</msg>
+<status status="PASS" starttime="20230103 09:35:35.777" endtime="20230103 09:35:37.475"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230103 09:35:39.476" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230103 09:35:37.475" endtime="20230103 09:35:39.476"/>
+</kw>
+<status status="PASS" starttime="20230103 09:35:35.777" endtime="20230103 09:35:39.476"/>
+</kw>
+<kw name="When I go the navigationbar and click on tools" library="Keywords">
+<tag>test_frontend</tag>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/app-root/app-layout/div/div[1]/app-sidebar/app-menu/ul/li[1]/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230103 09:35:39.479" level="INFO">Clicking element 'xpath:/html/body/app-root/app-layout/div/div[1]/app-sidebar/app-menu/ul/li[1]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20230103 09:35:39.478" endtime="20230103 09:35:39.695"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230103 09:35:41.696" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230103 09:35:39.695" endtime="20230103 09:35:41.696"/>
+</kw>
+<status status="PASS" starttime="20230103 09:35:39.477" endtime="20230103 09:35:41.696"/>
+</kw>
+<kw name="And I click on the component Alphanumeric" library="Keywords">
+<tag>test_frontend</tag>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath:/html/body/app-root/app-layout/div/div[2]/div/app-tool-gallery/div/div[1]/app-tool-gallery-component/p-card/div/div[2]/div[4]/p-button/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230103 09:35:41.697" level="INFO">Clicking button 'xpath:/html/body/app-root/app-layout/div/div[2]/div/app-tool-gallery/div/div[1]/app-tool-gallery-component/p-card/div/div[2]/div[4]/p-button/button'.</msg>
+<status status="PASS" starttime="20230103 09:35:41.697" endtime="20230103 09:35:41.802"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230103 09:35:43.804" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230103 09:35:41.803" endtime="20230103 09:35:43.804"/>
+</kw>
+<status status="PASS" starttime="20230103 09:35:41.697" endtime="20230103 09:35:43.804"/>
+</kw>
+<kw name="And Ik Ga Naar De Toggle 'Can Update' En Disable Het" library="Keywords">
+<tag>test_frontend</tag>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/app-root/app-layout/div/div[2]/div/app-tool-component-details/div[2]/div[3]/app-atomic-boolean/div/div/div/p-inputswitch/div/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230103 09:35:43.808" level="INFO">Clicking element 'xpath:/html/body/app-root/app-layout/div/div[2]/div/app-tool-component-details/div[2]/div[3]/app-atomic-boolean/div/div/div/p-inputswitch/div/span'.</msg>
+<status status="PASS" starttime="20230103 09:35:43.807" endtime="20230103 09:35:43.891"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230103 09:35:45.892" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230103 09:35:43.891" endtime="20230103 09:35:45.892"/>
+</kw>
+<status status="PASS" starttime="20230103 09:35:43.806" endtime="20230103 09:35:45.892"/>
+</kw>
+<kw name="Then Valideer Ik Op Inputveld En Tekst Van 'can Update'" library="Keywords">
+<tag>test_frontend</tag>
+<kw name="Page Should Not Contain Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/app-root/app-layout/div/div[2]/div/app-tool-component-details/div[1]/div/app-atomic-alphanumeric/div/div/div/input</arg>
+<doc>Verifies that element ``locator`` is not found on the current page.</doc>
+<msg timestamp="20230103 09:35:45.923" level="INFO">Current page does not contain element 'xpath:/html/body/app-root/app-layout/div/div[2]/div/app-tool-component-details/div[1]/div/app-atomic-alphanumeric/div/div/div/input'.</msg>
+<status status="PASS" starttime="20230103 09:35:45.894" endtime="20230103 09:35:45.923"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Pre-set value</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230103 09:35:45.987" level="INFO">Current page contains text 'Pre-set value'.</msg>
+<status status="PASS" starttime="20230103 09:35:45.923" endtime="20230103 09:35:45.987"/>
+</kw>
+<status status="PASS" starttime="20230103 09:35:45.893" endtime="20230103 09:35:45.988"/>
+</kw>
+<status status="PASS" starttime="20230103 09:35:35.776" endtime="20230103 09:35:45.989"/>
+</test>
+<status status="PASS" starttime="20230103 09:35:35.212" endtime="20230103 09:35:45.991"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcases">Testcases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
