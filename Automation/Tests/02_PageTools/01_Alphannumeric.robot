@@ -2,9 +2,8 @@
 Library    SeleniumLibrary
 Library    BuiltIn
 Resource   Automation/Keywords/01_Homepage/Homepage.robot
+Resource   Automation/Keywords/02_Tools/00TestStep_AtomicFunctionality.robot
 Resource   Automation/Keywords/02_Tools/01TestStep_Alphanumeric.robot
-
-
 
 *** Test Cases ***
 Scenario 1 : Test Alphanumeric elements
