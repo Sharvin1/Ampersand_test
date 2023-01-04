@@ -1,32 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.11.1 on darwin)" generated="20230103 15:42:34.850" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.11.1 on darwin)" generated="20230104 13:55:12.924" rpa="false" schemaversion="3">
 <suite id="s1" name="Ampersand test" source="/Users/emregul/PycharmProjects/Ampersand_test">
 <suite id="s1-s1" name="Automation" source="/Users/emregul/PycharmProjects/Ampersand_test/Automation">
 <suite id="s1-s1-s1" name="Tests" source="/Users/emregul/PycharmProjects/Ampersand_test/Automation/Tests">
-<suite id="s1-s1-s1-s1" name="01 PageHome" source="/Users/emregul/PycharmProjects/Ampersand_test/Automation/Tests/01_PageHome">
-<suite id="s1-s1-s1-s1-s1" name="01 NavigateHomepage" source="/Users/emregul/PycharmProjects/Ampersand_test/Automation/Tests/01_PageHome/01_NavigateHomepage.robot">
-<test id="s1-s1-s1-s1-s1-t1" name="Scenario 01: User navigates homepage" line="7">
-<kw name="Given User navigates homepage" library="Homepage">
+<suite id="s1-s1-s1-s1" name="02 PageTools" source="/Users/emregul/PycharmProjects/Ampersand_test/Automation/Tests/02_PageTools">
+<suite id="s1-s1-s1-s1-s1" name="01 Alphannumeric" source="/Users/emregul/PycharmProjects/Ampersand_test/Automation/Tests/02_PageTools/01_Alphannumeric.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Scenario 1 : Test Alphanumeric elements" line="10">
+<kw name="Given User Navigates Homepage" library="Homepage">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>http://localhost:4200</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230103 15:42:35.993" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200'.</msg>
-<status status="PASS" starttime="20230103 15:42:35.992" endtime="20230103 15:42:48.243"/>
+<msg timestamp="20230104 13:55:13.068" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200'.</msg>
+<status status="PASS" starttime="20230104 13:55:13.067" endtime="20230104 13:55:24.485"/>
 </kw>
-<status status="PASS" starttime="20230103 15:42:35.992" endtime="20230103 15:42:48.243"/>
+<status status="PASS" starttime="20230104 13:55:13.067" endtime="20230104 13:55:24.485"/>
 </kw>
-<status status="PASS" starttime="20230103 15:42:35.992" endtime="20230103 15:42:48.244"/>
+<kw name="And User navigates Tools Page" library="01TestStep_Alphanumeric">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/app-root/app-layout/div/div[1]/app-sidebar/app-menu/ul/li[1]/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230104 13:55:24.487" level="INFO">Clicking element 'xpath:/html/body/app-root/app-layout/div/div[1]/app-sidebar/app-menu/ul/li[1]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20230104 13:55:24.486" endtime="20230104 13:55:27.394"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230104 13:55:29.396" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230104 13:55:27.395" endtime="20230104 13:55:29.397"/>
+</kw>
+<status status="PASS" starttime="20230104 13:55:24.486" endtime="20230104 13:55:29.397"/>
+</kw>
+<status status="PASS" starttime="20230104 13:55:13.067" endtime="20230104 13:55:29.397"/>
 </test>
-<status status="PASS" starttime="20230103 15:42:34.900" endtime="20230103 15:42:48.244"/>
+<status status="PASS" starttime="20230104 13:55:12.937" endtime="20230104 13:55:29.399"/>
 </suite>
-<status status="PASS" starttime="20230103 15:42:34.899" endtime="20230103 15:42:48.245"/>
+<status status="PASS" starttime="20230104 13:55:12.937" endtime="20230104 13:55:29.400"/>
 </suite>
-<status status="PASS" starttime="20230103 15:42:34.898" endtime="20230103 15:42:48.245"/>
+<status status="PASS" starttime="20230104 13:55:12.936" endtime="20230104 13:55:29.401"/>
 </suite>
-<status status="PASS" starttime="20230103 15:42:34.898" endtime="20230103 15:42:48.245"/>
+<status status="PASS" starttime="20230104 13:55:12.936" endtime="20230104 13:55:29.401"/>
 </suite>
-<status status="PASS" starttime="20230103 15:42:34.851" endtime="20230103 15:42:48.246"/>
+<status status="PASS" starttime="20230104 13:55:12.925" endtime="20230104 13:55:29.402"/>
 </suite>
 <statistics>
 <total>
@@ -38,8 +53,8 @@
 <stat pass="1" fail="0" skip="0" id="s1" name="Ampersand test">Ampersand test</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1" name="Automation">Ampersand test.Automation</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Tests">Ampersand test.Automation.Tests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="01 PageHome">Ampersand test.Automation.Tests.01 PageHome</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="01 NavigateHomepage">Ampersand test.Automation.Tests.01 PageHome.01 NavigateHomepage</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="02 PageTools">Ampersand test.Automation.Tests.02 PageTools</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="01 Alphannumeric">Ampersand test.Automation.Tests.02 PageTools.01 Alphannumeric</stat>
 </suite>
 </statistics>
 <errors>
