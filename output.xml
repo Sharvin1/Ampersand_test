@@ -1,228 +1,228 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.11.1 on darwin)" generated="20230104 15:43:46.966" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.11.1 on darwin)" generated="20230109 15:46:30.935" rpa="false" schemaversion="3">
 <suite id="s1" name="Ampersand test" source="/Users/emregul/PycharmProjects/Ampersand_test">
 <suite id="s1-s1" name="Automation" source="/Users/emregul/PycharmProjects/Ampersand_test/Automation">
 <suite id="s1-s1-s1" name="Tests" source="/Users/emregul/PycharmProjects/Ampersand_test/Automation/Tests">
 <suite id="s1-s1-s1-s1" name="02 PageTools" source="/Users/emregul/PycharmProjects/Ampersand_test/Automation/Tests/02_PageTools">
-<suite id="s1-s1-s1-s1-s1" name="05 Date" source="/Users/emregul/PycharmProjects/Ampersand_test/Automation/Tests/02_PageTools/05_Date.robot">
-<test id="s1-s1-s1-s1-s1-t1" name="Scenario 1 : Test Date elements" line="9">
+<suite id="s1-s1-s1-s1-s1" name="02 Bigalphanumeric" source="/Users/emregul/PycharmProjects/Ampersand_test/Automation/Tests/02_PageTools/02_Bigalphanumeric.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Scenario 1 : Test Bigalphanumeric elements" line="9">
 <kw name="Given User Navigates Homepage" library="Homepage">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>http://localhost:4200</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230104 15:43:47.111" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200'.</msg>
-<status status="PASS" starttime="20230104 15:43:47.111" endtime="20230104 15:43:58.076"/>
+<msg timestamp="20230109 15:46:31.718" level="INFO">Opening browser 'chrome' to base url 'http://localhost:4200'.</msg>
+<status status="PASS" starttime="20230109 15:46:31.718" endtime="20230109 15:46:45.195"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230104 15:43:58.076" endtime="20230104 15:43:58.558"/>
+<status status="PASS" starttime="20230109 15:46:45.195" endtime="20230109 15:46:45.669"/>
 </kw>
-<status status="PASS" starttime="20230104 15:43:47.111" endtime="20230104 15:43:58.558"/>
+<status status="PASS" starttime="20230109 15:46:31.718" endtime="20230109 15:46:45.670"/>
 </kw>
-<kw name="And User navigates Tools Page" library="01TestStep_Alphanumeric">
+<kw name="And User navigates Tools Page" library="00TestStep_AtomicFunctionality">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html/body/app-root/app-layout/div/div[1]/app-sidebar/app-menu/ul/li[1]/ul/li[2]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230104 15:43:58.559" level="INFO">Clicking element 'xpath:/html/body/app-root/app-layout/div/div[1]/app-sidebar/app-menu/ul/li[1]/ul/li[2]/a'.</msg>
-<status status="PASS" starttime="20230104 15:43:58.559" endtime="20230104 15:44:01.161"/>
+<msg timestamp="20230109 15:46:45.671" level="INFO">Clicking element 'xpath:/html/body/app-root/app-layout/div/div[1]/app-sidebar/app-menu/ul/li[1]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20230109 15:46:45.670" endtime="20230109 15:46:48.542"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230104 15:44:03.163" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230104 15:44:01.162" endtime="20230104 15:44:03.164"/>
+<msg timestamp="20230109 15:46:50.544" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230109 15:46:48.542" endtime="20230109 15:46:50.544"/>
 </kw>
-<status status="PASS" starttime="20230104 15:43:58.558" endtime="20230104 15:44:03.164"/>
+<status status="PASS" starttime="20230109 15:46:45.670" endtime="20230109 15:46:50.545"/>
 </kw>
-<kw name="Then User clicks DateTime component" library="05TestSteps_DateTime">
+<kw name="Then User clicks Bigalphanumeric component" library="02TestStep_Bigalphanumeric">
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://p-button[@routerlink='/tools/atomic/date']//span[@class='p-button-label ng-star-inserted'][normalize-space()='How to use']</arg>
+<arg>xpath://p-button[@routerlink='/tools/atomic/bigalphanumeric']//span[@class='p-button-label ng-star-inserted'][normalize-space()='How to use']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230104 15:44:03.167" level="INFO">Clicking element 'xpath://p-button[@routerlink='/tools/atomic/date']//span[@class='p-button-label ng-star-inserted'][normalize-space()='How to use']'.</msg>
-<status status="PASS" starttime="20230104 15:44:03.166" endtime="20230104 15:44:04.885"/>
+<msg timestamp="20230109 15:46:50.546" level="INFO">Clicking element 'xpath://p-button[@routerlink='/tools/atomic/bigalphanumeric']//span[@class='p-button-label ng-star-inserted'][normalize-space()='How to use']'.</msg>
+<status status="PASS" starttime="20230109 15:46:50.545" endtime="20230109 15:46:52.361"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230104 15:44:06.888" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230104 15:44:04.885" endtime="20230104 15:44:06.889"/>
+<msg timestamp="20230109 15:46:54.363" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230109 15:46:52.361" endtime="20230109 15:46:54.363"/>
 </kw>
-<status status="PASS" starttime="20230104 15:44:03.165" endtime="20230104 15:44:06.889"/>
+<status status="PASS" starttime="20230109 15:46:50.545" endtime="20230109 15:46:54.363"/>
 </kw>
-<kw name="Then User checks Can Create" library="01TestStep_Alphanumeric">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[1]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230104 15:44:06.892" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[1]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
-<status status="PASS" starttime="20230104 15:44:06.891" endtime="20230104 15:44:07.361"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230104 15:44:09.363" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230104 15:44:07.361" endtime="20230104 15:44:09.363"/>
-</kw>
+<kw name="Then User checks Can Create" library="00TestStep_AtomicFunctionality">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[1]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230104 15:44:09.366" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[1]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
-<status status="PASS" starttime="20230104 15:44:09.363" endtime="20230104 15:44:09.663"/>
+<msg timestamp="20230109 15:46:54.364" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[1]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
+<status status="PASS" starttime="20230109 15:46:54.364" endtime="20230109 15:46:54.892"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230104 15:44:11.665" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230104 15:44:09.663" endtime="20230104 15:44:11.666"/>
+<msg timestamp="20230109 15:46:56.892" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230109 15:46:54.892" endtime="20230109 15:46:56.892"/>
 </kw>
-<status status="PASS" starttime="20230104 15:44:06.890" endtime="20230104 15:44:11.669"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[1]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230109 15:46:56.893" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[1]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
+<status status="PASS" starttime="20230109 15:46:56.892" endtime="20230109 15:46:57.206"/>
 </kw>
-<kw name="And User checks Can Read" library="01TestStep_Alphanumeric">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230109 15:46:59.207" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230109 15:46:57.206" endtime="20230109 15:46:59.207"/>
+</kw>
+<status status="PASS" starttime="20230109 15:46:54.364" endtime="20230109 15:46:59.208"/>
+</kw>
+<kw name="And User checks Can Read" library="00TestStep_AtomicFunctionality">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[2]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230104 15:44:11.671" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[2]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
-<status status="PASS" starttime="20230104 15:44:11.671" endtime="20230104 15:44:11.832"/>
+<msg timestamp="20230109 15:46:59.210" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[2]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
+<status status="PASS" starttime="20230109 15:46:59.209" endtime="20230109 15:46:59.328"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230104 15:44:13.834" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230104 15:44:11.832" endtime="20230104 15:44:13.834"/>
+<msg timestamp="20230109 15:47:01.331" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230109 15:46:59.328" endtime="20230109 15:47:01.331"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[2]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230104 15:44:13.834" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[2]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
-<status status="PASS" starttime="20230104 15:44:13.834" endtime="20230104 15:44:13.903"/>
+<msg timestamp="20230109 15:47:01.332" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[2]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
+<status status="PASS" starttime="20230109 15:47:01.331" endtime="20230109 15:47:01.402"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230104 15:44:15.905" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230104 15:44:13.903" endtime="20230104 15:44:15.906"/>
+<msg timestamp="20230109 15:47:03.403" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230109 15:47:01.402" endtime="20230109 15:47:03.404"/>
 </kw>
-<status status="PASS" starttime="20230104 15:44:11.670" endtime="20230104 15:44:15.906"/>
+<status status="PASS" starttime="20230109 15:46:59.208" endtime="20230109 15:47:03.405"/>
 </kw>
-<kw name="Then User checks Can Update" library="01TestStep_Alphanumeric">
+<kw name="Then User checks Can Update" library="00TestStep_AtomicFunctionality">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[3]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230104 15:44:15.907" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[3]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
-<status status="PASS" starttime="20230104 15:44:15.906" endtime="20230104 15:44:15.957"/>
+<msg timestamp="20230109 15:47:03.407" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[3]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
+<status status="PASS" starttime="20230109 15:47:03.406" endtime="20230109 15:47:03.476"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230104 15:44:17.960" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230104 15:44:15.957" endtime="20230104 15:44:17.960"/>
+<msg timestamp="20230109 15:47:05.477" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230109 15:47:03.476" endtime="20230109 15:47:05.477"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[3]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230104 15:44:17.962" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[3]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
-<status status="PASS" starttime="20230104 15:44:17.961" endtime="20230104 15:44:18.023"/>
+<msg timestamp="20230109 15:47:05.479" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[3]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
+<status status="PASS" starttime="20230109 15:47:05.477" endtime="20230109 15:47:05.575"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230104 15:44:20.025" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230104 15:44:18.023" endtime="20230104 15:44:20.026"/>
+<msg timestamp="20230109 15:47:07.576" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230109 15:47:05.575" endtime="20230109 15:47:07.577"/>
 </kw>
-<status status="PASS" starttime="20230104 15:44:15.906" endtime="20230104 15:44:20.026"/>
+<status status="PASS" starttime="20230109 15:47:03.405" endtime="20230109 15:47:07.577"/>
 </kw>
-<kw name="Then User checks Can Delete" library="01TestStep_Alphanumeric">
+<kw name="Then User checks Can Delete" library="00TestStep_AtomicFunctionality">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[4]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230104 15:44:20.029" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[4]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
-<status status="PASS" starttime="20230104 15:44:20.028" endtime="20230104 15:44:20.082"/>
+<msg timestamp="20230109 15:47:07.578" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[4]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
+<status status="PASS" starttime="20230109 15:47:07.578" endtime="20230109 15:47:07.625"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230104 15:44:22.083" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230104 15:44:20.082" endtime="20230104 15:44:22.084"/>
+<msg timestamp="20230109 15:47:09.625" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230109 15:47:07.625" endtime="20230109 15:47:09.625"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[4]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230104 15:44:22.086" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[4]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
-<status status="PASS" starttime="20230104 15:44:22.085" endtime="20230104 15:44:22.224"/>
+<msg timestamp="20230109 15:47:09.626" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[4]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
+<status status="PASS" starttime="20230109 15:47:09.625" endtime="20230109 15:47:09.762"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230104 15:44:24.227" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230104 15:44:22.224" endtime="20230104 15:44:24.227"/>
+<msg timestamp="20230109 15:47:11.765" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230109 15:47:09.762" endtime="20230109 15:47:11.765"/>
 </kw>
-<status status="PASS" starttime="20230104 15:44:20.027" endtime="20230104 15:44:24.227"/>
+<status status="PASS" starttime="20230109 15:47:07.577" endtime="20230109 15:47:11.766"/>
 </kw>
-<kw name="Then User checks Expression is univalent" library="01TestStep_Alphanumeric">
+<kw name="Then User checks Expression is univalent" library="00TestStep_AtomicFunctionality">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[3]/div[1]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230104 15:44:24.231" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[3]/div[1]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
-<status status="PASS" starttime="20230104 15:44:24.230" endtime="20230104 15:44:24.305"/>
+<msg timestamp="20230109 15:47:11.768" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[3]/div[1]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
+<status status="PASS" starttime="20230109 15:47:11.768" endtime="20230109 15:47:11.854"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230104 15:44:26.307" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230104 15:44:24.306" endtime="20230104 15:44:26.308"/>
+<msg timestamp="20230109 15:47:13.856" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230109 15:47:11.854" endtime="20230109 15:47:13.856"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[3]/div[1]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230104 15:44:26.309" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[3]/div[1]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
-<status status="PASS" starttime="20230104 15:44:26.308" endtime="20230104 15:44:26.362"/>
+<msg timestamp="20230109 15:47:13.857" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[3]/div[1]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
+<status status="PASS" starttime="20230109 15:47:13.856" endtime="20230109 15:47:13.886"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230104 15:44:28.363" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230104 15:44:26.362" endtime="20230104 15:44:28.363"/>
+<msg timestamp="20230109 15:47:15.887" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230109 15:47:13.886" endtime="20230109 15:47:15.887"/>
 </kw>
-<status status="PASS" starttime="20230104 15:44:24.229" endtime="20230104 15:44:28.363"/>
+<status status="PASS" starttime="20230109 15:47:11.767" endtime="20230109 15:47:15.888"/>
 </kw>
-<kw name="Then User checks Expression is total" library="01TestStep_Alphanumeric">
+<kw name="Then User checks Expression is total" library="00TestStep_AtomicFunctionality">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[3]/div[2]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230104 15:44:28.366" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[3]/div[2]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
-<status status="PASS" starttime="20230104 15:44:28.365" endtime="20230104 15:44:28.467"/>
+<msg timestamp="20230109 15:47:15.891" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[3]/div[2]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
+<status status="PASS" starttime="20230109 15:47:15.889" endtime="20230109 15:47:15.964"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230104 15:44:30.468" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230104 15:44:28.467" endtime="20230104 15:44:30.468"/>
+<msg timestamp="20230109 15:47:17.965" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230109 15:47:15.964" endtime="20230109 15:47:17.965"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[3]/div[2]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230104 15:44:30.470" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[3]/div[2]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
-<status status="PASS" starttime="20230104 15:44:30.468" endtime="20230104 15:44:30.538"/>
+<msg timestamp="20230109 15:47:17.966" level="INFO">Clicking element 'xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[3]/div[2]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]'.</msg>
+<status status="PASS" starttime="20230109 15:47:17.965" endtime="20230109 15:47:18.001"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230104 15:44:32.539" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230104 15:44:30.538" endtime="20230104 15:44:32.540"/>
+<msg timestamp="20230109 15:47:20.003" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230109 15:47:18.001" endtime="20230109 15:47:20.003"/>
 </kw>
-<status status="PASS" starttime="20230104 15:44:28.364" endtime="20230104 15:44:32.540"/>
+<status status="PASS" starttime="20230109 15:47:15.889" endtime="20230109 15:47:20.003"/>
 </kw>
-<status status="PASS" starttime="20230104 15:43:47.110" endtime="20230104 15:44:32.541"/>
+<status status="PASS" starttime="20230109 15:46:31.717" endtime="20230109 15:47:20.004"/>
 </test>
-<status status="PASS" starttime="20230104 15:43:46.980" endtime="20230104 15:44:32.543"/>
+<status status="PASS" starttime="20230109 15:46:30.975" endtime="20230109 15:47:20.006"/>
 </suite>
-<status status="PASS" starttime="20230104 15:43:46.980" endtime="20230104 15:44:32.545"/>
+<status status="PASS" starttime="20230109 15:46:30.975" endtime="20230109 15:47:20.007"/>
 </suite>
-<status status="PASS" starttime="20230104 15:43:46.980" endtime="20230104 15:44:32.546"/>
+<status status="PASS" starttime="20230109 15:46:30.974" endtime="20230109 15:47:20.007"/>
 </suite>
-<status status="PASS" starttime="20230104 15:43:46.979" endtime="20230104 15:44:32.547"/>
+<status status="PASS" starttime="20230109 15:46:30.973" endtime="20230109 15:47:20.008"/>
 </suite>
-<status status="PASS" starttime="20230104 15:43:46.967" endtime="20230104 15:44:32.548"/>
+<status status="PASS" starttime="20230109 15:46:30.936" endtime="20230109 15:47:20.008"/>
 </suite>
 <statistics>
 <total>
@@ -235,7 +235,7 @@
 <stat pass="1" fail="0" skip="0" id="s1-s1" name="Automation">Ampersand test.Automation</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Tests">Ampersand test.Automation.Tests</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="02 PageTools">Ampersand test.Automation.Tests.02 PageTools</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="05 Date">Ampersand test.Automation.Tests.02 PageTools.05 Date</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="02 Bigalphanumeric">Ampersand test.Automation.Tests.02 PageTools.02 Bigalphanumeric</stat>
 </suite>
 </statistics>
 <errors>
