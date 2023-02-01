@@ -4,5 +4,5 @@ Library    BuiltIn
 
 *** Keywords ***
 User clicks Bigalphanumeric component
-    Click Element    xpath://p-button[@routerlink='/tools/atomic/bigalphanumeric']//span[@class='p-button-label ng-star-inserted'][normalize-space()='How to use']
+    Click Element    xpath:(//span[@class='p-button-label ng-star-inserted'])[3]
     Sleep  2s
