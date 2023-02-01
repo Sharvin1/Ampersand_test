@@ -9,7 +9,7 @@ User navigates Tools Page
 User checks Can Create
     Click Element  xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[1]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]
     Sleep  2s
-    Click Element    xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[1]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]
+    Click Element   xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[1]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]
     Sleep  2s
 User checks Can Read
     Click Element    xpath:/html[1]/body[1]/app-root[1]/app-layout[1]/div[1]/div[2]/div[1]/app-tool-component-details[1]/div[2]/div[2]/app-atomic-boolean[1]/div[1]/div[1]/div[1]/p-inputswitch[1]/div[1]/span[1]
